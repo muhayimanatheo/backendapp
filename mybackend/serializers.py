@@ -3,5 +3,5 @@ from.models import *
 
 class UserRegisterSerializer(serializers.ModelSerializer):
     class Meta:
-        model = UserRegister
-        fields = '_all_'
+        model= UserRegister
+        fields = '__all__'
