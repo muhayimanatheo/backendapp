@@ -9,6 +9,6 @@ class UserRegisterSerializer(serializers.ModelSerializer):
 
 class BlogsSerializer(serializers.ModelSerializer):
     class Meta:
-        models = Blogs
+        model = Blogs
         fields = '__all__'
 

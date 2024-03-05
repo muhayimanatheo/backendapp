@@ -58,8 +58,8 @@ def BlogApi(request):
                 serializer.save()
                 return JsonResponse(serializer.data, status=status.HTTP_201_CREATED)
             else:
-                logger.error("serializer error: %s", serializer.error)
-            return JsonResponse(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+                #logger.error("serializer error: %s", serializer.error)
+               return JsonResponse(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
 
 @csrf_exempt
