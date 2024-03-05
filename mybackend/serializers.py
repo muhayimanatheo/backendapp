@@ -5,3 +5,10 @@ class UserRegisterSerializer(serializers.ModelSerializer):
     class Meta:
         model= UserRegister
         fields = '__all__'
+
+
+class BlogsSerializer(serializers.ModelSerializer):
+    class Meta:
+        models = Blogs
+        fields = '__all__'
+

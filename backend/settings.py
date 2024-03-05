@@ -41,7 +41,16 @@ INSTALLED_APPS = [
     'rest_framework',
     'mybackend',
     'corsheaders',
+    'drf_yasg',
 ]
+
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'Basic': {
+            'type': 'basic'
+        }
+    }
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
